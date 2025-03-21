@@ -17,6 +17,7 @@ struct BookingModel: Identifiable, Codable {
     var amount: Double
     var isPaid: Bool
 
+    // This function converts the data to a dictionary format which is better for FireStore. 
     func toDictionary() -> [String: Any] {
         return [
             "id": id,
