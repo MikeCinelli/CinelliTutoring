@@ -30,3 +30,6 @@ enum UserRole: String, Codable {
     case clientAdult
     case clientChild
 }
+
+
+//TODO Fix up the input for the state/ town. For town, reading in zipcode and then outputting town probably best. 
