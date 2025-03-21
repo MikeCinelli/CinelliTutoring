@@ -14,6 +14,7 @@ final class UserAuthViewModel: ObservableObject {
     
     // MARK: - Published Properties
     @Published var user: User? // Holds the currently logged-in user
+    @Published var userModel: UserModel?  // Add this property
     @Published var authError: String? // Stores authentication-related error messages
     @Published var isLoading: Bool = false // Tracks if an authentication request is in progress
     

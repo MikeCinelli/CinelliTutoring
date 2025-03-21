@@ -15,6 +15,18 @@ struct BookingModel: Identifiable, Codable {
     var status: BookingStatus
     var amount: Double
     var isPaid: Bool
+
+    func toDictionary() -> [String: Any] {
+        return [
+            "id": id,
+            "userId": userId,
+            "startTime": startTime,
+            "endTime": endTime,
+            "status": status.rawValue,
+            "amount": amount,
+            "isPaid": isPaid
+        ]
+    }
 }
 
 enum BookingStatus: String, Codable {

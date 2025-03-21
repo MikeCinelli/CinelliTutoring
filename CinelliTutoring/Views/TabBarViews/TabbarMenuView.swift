@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Foundation
+
 
 /// The main tab bar menu for the CinelliTutoring app.
 /// This view provides navigation between booking, scheduled sessions, and profile management.
@@ -18,13 +18,6 @@ struct TabBarMenuView: View {
     var body: some View {
         TabView(selection: $selectedTab) { // TabView creates a tabbed navigation interface
             
-            // Booking View Tab
-            BookingView()
-                .tabItem {
-                    Image(systemName: "calendar.badge.plus") // Icon for the tab
-                    Text("Book") // Label for the tab
-                }
-                .tag(0) // Unique identifier for this tab
             
             // Scheduled Sessions View Tab
             ScheduledSessionsView()
@@ -46,17 +39,6 @@ struct TabBarMenuView: View {
     }
 }
 
-/// Placeholder view for BookingView
-struct BookingView: View {
-    var body: some View {
-        VStack {
-            Text("Booking View")
-                .font(.largeTitle)
-                .padding()
-            Text("This is where users will book a tutoring session.")
-        }
-    }
-}
 
 /// Placeholder view for ScheduledSessionsView
 struct ScheduledSessionsView: View {
