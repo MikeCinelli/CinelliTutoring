@@ -5,7 +5,7 @@
 //  Created by Michael Cinelli on 3/11/25.
 //
 
-import SwiftUI
+import SwiftUI // This lets us use SwiftUI, a tool to build the app's interface
 
 
 /// The main tab bar menu for the CinelliTutoring app.
