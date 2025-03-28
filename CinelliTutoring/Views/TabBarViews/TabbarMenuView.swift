@@ -8,7 +8,6 @@
 import SwiftUI // This lets us use SwiftUI, a tool to build the app's interface
 
 
-/// The main tab bar menu for the CinelliTutoring app.
 /// This view provides navigation between booking, scheduled sessions, and profile management.
 struct TabBarMenuView: View {
     
