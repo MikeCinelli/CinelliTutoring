@@ -6,7 +6,7 @@
 //
 
 import Foundation 
-import Combine // Helps with handling updates to the UI when data changes
+import Combine // Helps with handling updates to the UI when data changes help 
 
 // This class manages booking-related data and makes it available to the UI
 class BookingViewModel: ObservableObject {
